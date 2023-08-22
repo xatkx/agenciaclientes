@@ -18,7 +18,7 @@ public interface Crud<E> {
     
     public ArrayList<E> getAll();
     
-    public Object getOne();
+    public Object getOne(int id);
     
     public boolean putOne(Object obj);
     

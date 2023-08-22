@@ -24,19 +24,16 @@ public class app {
         List<cliente> rs = null;
 
         try {
-            rs = mysql.getClientes("select id,nombre, apellido, dirrecion from clientes");
-            System.out.println("exito!! ");
-        } catch ( SQLException e) {
+            cliente s = (cliente) mysql.getOne(1);
+            
+            System.out.println(s);
+            
+        } catch ( Exception e) {
             System.out.println("hay un error "+e.getMessage());
             
         } finally {
             
-        }
-        
-        rs.forEach(item -> {
-            System.out.println(item.getNombre());
-        });
-        
+        } 
 
     }
 }

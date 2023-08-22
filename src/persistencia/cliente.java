@@ -22,23 +22,21 @@ public class cliente {
         return direcion;
     }
     
-    String nombre;
-    String apellido;
-    String direcion;
+    String nombre,  apellido,  direcion, email;
     int id;
     
-    public cliente (int id, String name,String lastname, String address)
+    public cliente (int id, String name,String lastname, String email)
     {
         this.nombre = name;
         this.apellido = lastname;
-        this.direcion = address;
+        this.email = email;
         this.id = id;
        
     }
 
     @Override
     public String toString() {
-        String s = nombre+" "+apellido+" "+direcion;
+        String s = nombre+" "+apellido+" "+email;
         return s;
     }
     
