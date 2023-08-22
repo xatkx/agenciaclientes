@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package agendaeletronica.gui;
+package gui;
 
 import java.time.Clock;
 
@@ -62,7 +62,6 @@ public class dashboard extends javax.swing.JFrame {
         jSeparator2 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(800, 500));
 
         labelTittle.setFont(new java.awt.Font("sansserif", 0, 48)); // NOI18N
         labelTittle.setText("Agencia eletronica");
